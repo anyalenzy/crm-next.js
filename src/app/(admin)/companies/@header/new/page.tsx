@@ -1,8 +1,14 @@
+'use client';
+
 import React from 'react';
-import Header from '@/app/components/header';
+import CompanyForm from '@/app/components/company-form';
 
 export interface PageProps {}
 
 export default function Page({}: PageProps) {
-  return <Header>Add new company</Header>;
+  return (
+    <div className="py-6 px-10">
+      <CompanyForm />
+    </div>
+  );
 }
